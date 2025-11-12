@@ -41,8 +41,7 @@ Combines Matveev's theorem (linear forms in logarithms over ℚ(√5)) with Bake
 
 ## Reference
 
-C. Bouyacoub, A. El-Baz, O. Kihel (2025). Perfect Powers Expressible as Sums of Lucas Numbers. *Quaestiones Mathematicae* (submitted).
-
+A. El-Baz
 ## License
 
 MIT. Citation requested for academic use.
