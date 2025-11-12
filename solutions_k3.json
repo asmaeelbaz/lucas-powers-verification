@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "equation": "y^a = sum(L_{n_i}) for i=1 to k",
+    "k": 3,
+    "search_window": {
+      "y_min": 2,
+      "y_max": 25000
+    },
+    "algebraic_field": "Q(sqrt(5))",
+    "admissibility_criterion": "Brown (1969)",
+    "computation_time_seconds": 1.51,
+    "admissible_triples_enumerated": 16170,
+    "search_bound": {
+      "n_3_max": 49,
+      "L_49": 17393796001
+    }
+  },
+  "sporadic_solutions": [
+    {
+      "y": 2,
+      "a": 4,
+      "indices": [1, 3, 5],
+      "lucas_values": [1, 4, 11],
+      "sum": 16,
+      "verification": "2^4 = 16"
+    },
+    {
+      "y": 2,
+      "a": 7,
+      "indices": [1, 3, 10],
+      "lucas_values": [1, 4, 123],
+      "sum": 128,
+      "verification": "2^7 = 128"
+    },
+    {
+      "y": 2,
+      "a": 12,
+      "indices": [3, 13, 17],
+      "lucas_values": [4, 521, 3571],
+      "sum": 4096,
+      "verification": "2^12 = 4096",
+      "note": "CORRECTED: manuscript had a=11 (error)"
+    },
+    {
+      "y": 3,
+      "a": 3,
+      "indices": [0, 4, 6],
+      "lucas_values": [2, 7, 18],
+      "sum": 27,
+      "verification": "3^3 = 27"
+    },
+    {
+      "y": 3,
+      "a": 4,
+      "indices": [1, 3, 9],
+      "lucas_values": [1, 4, 76],
+      "sum": 81,
+      "verification": "3^4 = 81"
+    },
+    {
+      "y": 12,
+      "a": 2,
+      "indices": [2, 6, 10],
+      "lucas_values": [3, 18, 123],
+      "sum": 144,
+      "verification": "12^2 = 144"
+    },
+    {
+      "y": 20,
+      "a": 2,
+      "indices": [0, 9, 12],
+      "lucas_values": [2, 76, 322],
+      "sum": 400,
+      "verification": "20^2 = 400"
+    },
+    {
+      "y": 23,
+      "a": 2,
+      "indices": [1, 4, 13],
+      "lucas_values": [1, 7, 521],
+      "sum": 529,
+      "verification": "23^2 = 529"
+    },
+    {
+      "y": 33,
+      "a": 2,
+      "indices": [8, 11, 14],
+      "lucas_values": [47, 199, 843],
+      "sum": 1089,
+      "verification": "33^2 = 1089"
+    },
+    {
+      "y": 37,
+      "a": 2,
+      "indices": [1, 3, 15],
+      "lucas_values": [1, 4, 1364],
+      "sum": 1369,
+      "verification": "37^2 = 1369"
+    },
+    {
+      "y": 38,
+      "a": 2,
+      "indices": [3, 9, 15],
+      "lucas_values": [4, 76, 1364],
+      "sum": 1444,
+      "verification": "38^2 = 1444"
+    },
+    {
+      "y": 57,
+      "a": 2,
+      "indices": [11, 14, 16],
+      "lucas_values": [199, 843, 2207],
+      "sum": 3249,
+      "verification": "57^2 = 3249"
+    },
+    {
+      "y": 63,
+      "a": 2,
+      "indices": [9, 12, 17],
+      "lucas_values": [76, 322, 3571],
+      "sum": 3969,
+      "verification": "63^2 = 3969"
+    },
+    {
+      "y": 114,
+      "a": 2,
+      "indices": [9, 17, 19],
+      "lucas_values": [76, 3571, 9349],
+      "sum": 12996,
+      "verification": "114^2 = 12996"
+    }
+  ],
+  "infinite_family": {
+    "identity": "L_{3n} + L_{n+2} + L_{n-2} = L_n^3",
+    "constraint": "n even, n >= 4",
+    "algebraic_origin": "Triple-angle formula in Q(sqrt(5))",
+    "solutions_in_window": [
+      {
+        "n": 4,
+        "y": 7,
+        "a": 3,
+        "indices": [2, 6, 12],
+        "label": "L_4^3"
+      },
+      {
+        "n": 6,
+        "y": 18,
+        "a": 3,
+        "indices": [4, 8, 18],
+        "label": "L_6^3"
+      },
+      {
+        "n": 8,
+        "y": 47,
+        "a": 3,
+        "indices": [6, 10, 24],
+        "label": "L_8^3"
+      },
+      {
+        "n": 10,
+        "y": 123,
+        "a": 3,
+        "indices": [8, 12, 30],
+        "label": "L_10^3"
+      },
+      {
+        "n": 12,
+        "y": 322,
+        "a": 3,
+        "indices": [10, 14, 36],
+        "label": "L_12^3"
+      },
+      {
+        "n": 14,
+        "y": 843,
+        "a": 3,
+        "indices": [12, 16, 42],
+        "label": "L_14^3"
+      }
+    ]
+  },
+  "theoretical_background": {
+    "lucas_recurrence": "L_0 = 2, L_1 = 1, L_{n+2} = L_{n+1} + L_n",
+    "binet_formula": "L_n = alpha^n + beta^n",
+    "golden_ratio": "alpha = (1 + sqrt(5))/2",
+    "conjugate": "beta = (1 - sqrt(5))/2 = -1/alpha",
+    "quadratic_field": "K = Q(sqrt(5))",
+    "ring_of_integers": "O_K = Z[alpha]"
+  }
+}
